@@ -1,3 +1,4 @@
+package ReviewPart3;
 import java.util.Scanner;
 public class NecklaceProblem {
 
