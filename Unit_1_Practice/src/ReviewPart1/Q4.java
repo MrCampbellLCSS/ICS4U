@@ -1,13 +1,20 @@
 package ReviewPart1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Q4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter your grade for this class: ");
-		int grade = sc.nextInt();
+		int grade = 0;
+		try {
+			System.out.print("Enter your grade for this class: ");
+			grade = sc.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("Invalid input - session terminated.");
+			System.exit(0);
+		}
 		grade = grade / 10;
 		
 		switch(grade) {
