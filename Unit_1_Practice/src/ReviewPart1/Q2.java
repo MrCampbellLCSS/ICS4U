@@ -1,3 +1,6 @@
+/*
+ * This is a header comment.
+ */
 package ReviewPart1;
 
 import java.util.Scanner;
